@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<html lang="en">
+
+<head>
+	<title> My Memory Game </title>
+	<link rel="stylesheet" href="style_game.css">
+</head>
+
+<body>
+  <h1 id="topHeading"> Memory Game </h1>
+  
+  <div id="imageContainer">
+    <div class="image-wrapper">
+      <img src="N.svg" alt="Image 1" id="image1">
+      <div class="overlay"></div>
+    </div>
+    <div class="image-wrapper">
+      <img src="U.svg" alt="Image 2" id="image2">
+      <div class="overlay"></div>
+    </div>
+    <div class="image-wrapper">
+      <img src="R.svg" alt="Image 3" id="image3">
+      <div class="overlay"></div>
+    </div>
+    <div class="image-wrapper">
+      <img src="1.svg" alt="Image 4" id="image4">
+      <div class="overlay"></div>
+    </div>
+    <div class="image-wrapper">
+      <img src="2.svg" alt="Image 5" id="image5">
+      <div class="overlay"></div>
+    </div>
+  </div>
+  
+	<p class="scoreboard">Score: <span id="score">0</span></p>
+
+	<div class="actions">
+		<button id="startButton" type="button" onclick="start()"> Start </button>
+		<button id="restartButton" type="button" onclick="restart()"> Restart </button>
+	</div>
+
+  <script src="memorygame.js"> </script>
+
+</body>
+</html>
